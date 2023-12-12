@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Integracion Solar</title>
 </head>
 
@@ -47,16 +46,17 @@
             <h2>SERVICIOS</h2>
         </div>
         <div class="leftServicios">
-            <div class="cardServicios">
+            <div class="cardServicios" data-aos="fade-right">
                 <div class="circle">
                     <img src="./img/icono-1.png" alt="">
                 </div>
                 <div class="cardTexto">
-                    <p>Diseño, proyecto e instalación de Sistemas de Autogeneración Fotovoltaica (obras llave en mano).
+                    <p>Diseño, proyecto e instalación de Sistemas de Autogeneración Fotovoltaica (obras llave en
+                        mano).
                     </p>
                 </div>
             </div>
-            <div class="cardServicios">
+            <div class="cardServicios" data-aos="fade-left">
                 <div class="circle">
                     <img src="./img/icono-2.png" alt="">
                 </div>
@@ -65,7 +65,7 @@
                     </p>
                 </div>
             </div>
-            <div class="cardServicios">
+            <div class="cardServicios" data-aos="fade-right">
                 <div class="circle">
                     <img src="./img/icono-3.png" alt="">
                 </div>
@@ -76,7 +76,7 @@
             </div>
         </div>
         <div class="rightServicios">
-            <div class="cardServicios">
+            <div class="cardServicios" data-aos="fade-left">
                 <div class="circle">
                     <img src="./img/icono-4.png" alt="">
                 </div>
@@ -85,7 +85,7 @@
                         real-time (medición True RMS).</p>
                 </div>
             </div>
-            <div class="cardServicios">
+            <div class="cardServicios" data-aos="fade-right">
                 <div class="circle">
                     <img src="./img/icono-5.png" alt="">
                 </div>
@@ -93,7 +93,7 @@
                     <p>Desarrollo de Ingenierías de Detalle para Sistemas de Autogeneración Fotovoltáica.</p>
                 </div>
             </div>
-            <div class="cardServicios">
+            <div class="cardServicios" data-aos="fade-left">
                 <div class="circle">
                     <img src="./img/icono-6.png" alt="">
                 </div>
@@ -114,7 +114,7 @@
                 competitivas y experiencias exitosas de todo el equipo.</p>
         </div>
         <div class="contenedorCards">
-            <div class="cardProposito">
+            <div class="cardProposito"data-aos="flip-left">
                 <img src="./img/icono-7.png" alt="">
                 <div>
                     <h3>MISIÓN</h3>
@@ -122,7 +122,7 @@
                         líderes en sus respectivos sectores.</p>
                 </div>
             </div>
-            <div class="cardProposito">
+            <div class="cardProposito"data-aos="flip-left">
                 <img src="./img/icono-8.png" alt="">
                 <div>
                     <h3>VISIÓN</h3>
@@ -131,7 +131,7 @@
                         renovables y eficiencia energética.</p>
                 </div>
             </div>
-            <div class="cardProposito">
+            <div class="cardProposito"data-aos="flip-left">
                 <img src="./img/icono-9.png" alt="">
                 <div>
                     <h3>VALORES</h3>
@@ -146,49 +146,58 @@
         <div class="tituloTres">
             <h2>SOLAR HUB</h2>
         </div>
-        <div class="cardSolar">
+        <div class="cardSolar" data-aos="zoom-out-up">
             <div class="contenedorImg">
-                <img src="./img/icono-10.png" alt="">
+                <img class="iconImg" src="./img/icono-10.png" alt="">
             </div>
-            <p>Empresa lider en <b>tecnología solar fotovoltaica</b> para grandes proyectos de autogeneración energética. <b>Partner VIP Huawei FusionSolar LATAM.</b></p>
+            <p>Empresa lider en <b>tecnología solar fotovoltaica</b> para grandes proyectos de autogeneración
+                energética. <b>Partner VIP Huawei FusionSolar LATAM.</b></p>
         </div>
-        <div class="cardSolar">
+        <div class="cardSolar" data-aos="zoom-out-up">
             <div class="contenedorImg">
-                <img src="./img/icono-11.png" alt="">
+                <img class="iconImg" src="./img/icono-11.png" alt="">
             </div>
-            <p>Empresa de <b>servicios IT, dirección e integración de proyectos tecnológicos</b>, con una amplia red de abastecimiento y distribución de productos informáticos.</p>
+            <p>Empresa de <b>servicios IT, dirección e integración de proyectos tecnológicos</b>, con una amplia red de
+                abastecimiento y distribución de productos informáticos.</p>
         </div>
-        <div class="cardSolar">
+        <div class="cardSolar" data-aos="zoom-out-up">
             <div class="contenedorImg">
-                <img src="./img/icono-12.png" alt="">
+                <img class="iconImg" src="./img/icono-12.png" alt="">
             </div>
-            <p>Empresa de ingeniería de desarrollo de <b>soluciones de monitoreo energético</b> de organizaciones para optimizar su consumo y reducir la huella de carbono.</p>
+            <p>Empresa de ingeniería de desarrollo de <b>soluciones de monitoreo energético</b> de organizaciones para
+                optimizar su consumo y reducir la huella de carbono.</p>
         </div>
-        <div class="cardSolar">
+        <div class="cardSolar" data-aos="zoom-out-up">
             <div class="contenedorImg">
-                <img src="./img/icono-13.png" alt="">
+                <img class="iconImg" src="./img/icono-13.png" alt="">
             </div>
-            <p>Líder en <b>estructuras de aluminio y sistemas de carpintería</b> con ruptura de puente térmico. Distribuidor oficial Aluar. Representante Solatube en Argentina.</p>
+            <p>Líder en <b>estructuras de aluminio y sistemas de carpintería</b> con ruptura de puente térmico.
+                Distribuidor oficial Aluar. Representante Solatube en Argentina.</p>
         </div>
-        <div class="cardSolar">
+        <div class="cardSolar" data-aos="zoom-out-up">
             <div class="contenedorImg">
-                <img src="./img/icono-14.png" alt="">
+                <img class="iconImg" src="./img/icono-14.png" alt="">
             </div>
-            <p>Empresa de ingeniería dedicada a la <b>ejecución de proyectos de instalaciones eléctricas</b> de baja tensión, autogeneración fotovoltaica y seguridad electrónica.</p>
+            <p>Empresa de ingeniería dedicada a la <b>ejecución de proyectos de instalaciones eléctricas</b> de baja
+                tensión, autogeneración fotovoltaica y seguridad electrónica.</p>
         </div>
-        <div class="cardSolar">
+        <div class="cardSolar" data-aos="zoom-out-up">
             <div class="contenedorImg">
-                <img src="./img/icono-15.png" alt="">
+                <img class="iconImg" src="./img/icono-15.png" alt="">
             </div>
-            <p>Consultora especializada en <b>sustentabilidad, impacto ambiental y seguridad ocupacional</b> enfocada en brindar soluciones para medianas y grandes empresas.</p>
+            <p>Consultora especializada en <b>sustentabilidad, impacto ambiental y seguridad ocupacional</b> enfocada en
+                brindar soluciones para medianas y grandes empresas.</p>
         </div>
     </section>
     <footer class="contenedorFooter">
         <h2>¡HABLEMOS!</h2>
         <h3>info@deve.ar</h3>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/script.js"></script>
-
 </body>
 
 </html>
