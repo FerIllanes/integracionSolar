@@ -22,7 +22,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     margin-top: 1rem;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .logo {
-    max-width: 200px;
+    width: 200px;
 }
 
 .menu {
@@ -85,6 +85,7 @@
     color: #fff;
     font-weight: 600;
     font-size: 0.8rem;
+    margin-bottom: 3rem;
 }
 
 .contenedorServicios {
@@ -227,48 +228,51 @@
     padding: 2rem;
     width: 80%;
     margin: auto;
-  }
-  
-  .tituloTres {
+}
+
+.tituloTres {
     text-align: center;
-  }
-  
-  .tituloTres h2 {
+}
+
+.tituloTres h2 {
     font-size: 2rem;
     color: #43B06C;
     font-weight: 900;
     margin-bottom: 1rem;
-  }
-  
-  .cardSolar {
+}
+
+.cardSolar {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .contenedorImg {
+.contenedorImg {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 130px;
+    height: 150px;
     width: 100%;
     border: 1px solid #8C8C8C;
     border-radius: 1rem;
+    overflow: hidden;
+    padding: 0.8rem;
+}
 
-  }
-  
-  .iconImg{
-    width: 80%;
-  }
-  
-  .cardSolar p {
+.iconImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cardSolar p {
     font-size: 0.8rem;
     color: #424242;
     padding: 0.5rem;
-  }
+}
 
-  .contenedorFooter {
+.contenedorFooter {
     display: grid;
     place-content: center;
     text-align: center;
@@ -277,22 +281,22 @@
     background-position: top;
     background-size: cover;
     padding: 10rem;
-  }
+}
 
-  .contenedorFooter h2{
+.contenedorFooter h2 {
     font-size: 2rem;
     font-weight: 900;
     color: #FFB500;
-  }
+}
 
-  .contenedorFooter h3{
+.contenedorFooter h3 {
     font-size: 1rem;
     font-weight: 600;
     color: #FFFFFF;
     padding: 0.2rem;
-  }
+}
 
- 
+
 
 /* ------------ MEDIA QRY ------------ */
 
@@ -302,19 +306,79 @@
         margin: auto;
     }
 
-    .menu {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 1.5rem;
-        font-size: 0.8rem;
-        flex-grow: 2;
-    }
-
     .menu-btn {
         display: none;
     }
 
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 4rem 10rem;
+        margin-top: 1rem;
+    }
+
+    .menu-btn {
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 30px;
+        border: 3px solid #fff;
+        margin: 6px 0;
+    }
+
+    .logo {
+        width: 350px;
+    }
+
+    .menu {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        justify-content: right;
+        gap: 4rem;
+        font-size: 1.3rem;
+        flex-grow: 2;
+        width: auto;
+        margin-top: 1rem;
+        background-color: transparent;
+        padding: 0;
+
+    }
+
+    .menu li {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 500;
+    }
+
+    .intro {
+        align-self: flex-start;
+        margin-top: auto;
+        margin-left: 10rem;
+        margin-right: 2rem;
+        margin-bottom: 10rem;
+    }
+
+    .intro h1 {
+        color: #fff;
+        font-weight: 700;
+        font-size: 4.5rem;
+    }
+
+    .intro p {
+        color: #fff;
+        font-weight: 400;
+        font-size: 2.7rem;
+        width: 60%;
+        margin-bottom: 0;
+    }
+
     .contenedorServicios {
+        position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr;
@@ -323,15 +387,15 @@
         width: 80%;
         margin: auto;
         background-color: #FFFFFF;
-        border-top-right-radius: 2rem;
-        border-top-left-radius: 2rem;
-        margin-top: -25px;
+        border-radius: 2rem;
+        margin-top: -60px;
+        z-index: 2;
     }
 
     .tituloUno {
         grid-area: tituloUno;
         text-align: center;
-        margin-top: 2rem;
+        margin: 3rem 0;
     }
 
     .tituloUno h2 {
@@ -397,12 +461,126 @@
         font-size: 1.3rem;
     }
 
-    .contenedorSolar {
-        grid-template-columns: repeat(3, 1fr);
-      }
-      
-      .cardSolar {
-        margin-bottom: 0; /* Eliminamos el espacio entre las tarjetas en pantallas más grandes */
-      }
-    
+    .contenedorProposito {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70vh;
+        align-items: center;
+        background-image: url(../img/fondo_proposito.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 0 2rem 4rem 2rem;
+        margin-top: -70px;
+        margin-bottom: 20rem;
+        z-index: 1;
+    }
+
+    .tituloDos {
+        text-align: center;
+        margin-top: 20rem;
+        margin-bottom: 2rem;
+        width: 55%;
+    }
+
+    .tituloDos h2 {
+        font-size: 4rem;
+        color: #FFFFFF;
+        font-weight: 900;
+        margin-bottom: 2rem;
+    }
+
+    .tituloDos p {
+        color: #FFFFFF;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        font-weight: 300;
+    }
+
+    .contenedorCards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .cardProposito {
+        justify-content: space-evenly;
+        height: 400px;
+        width: 405px;
+        border: 3px solid #FFB500;
+    }
+
+    .cardProposito img {
+        height: 100px;
+        width: auto;
+    }
+
+    .cardProposito p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .cardProposito h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .tituloTres {
+        grid-column: span 3;
+    }
+
+    .tituloTres h2 {
+        font-size: 4.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .cardSolar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedorSolar{
+        gap: 2rem;
+        margin-bottom: 7rem;
+    }
+
+    .contenedorImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 100%;
+        border: 1px solid #8C8C8C;
+        border-radius: 1rem;
+        overflow: hidden;
+        padding: 1.5rem;
+    }
+
+    .iconImg {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .cardSolar p {
+        font-size: 1.2rem;
+        color: #424242;
+        padding: 0.5rem;
+    }
+
+    .contenedorFooter h2 {
+        font-size: 5rem;
+        font-weight: 900;
+        color: #FFB500;
+    }
+
+    .contenedorFooter h3 {
+        font-size: 2rem;
+    }
 }
