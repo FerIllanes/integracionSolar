@@ -11,7 +11,7 @@
 .contenedor {
     display: flex;
     flex-direction: column;
-    background-image: url(../img/fondo_header.png);
+    background-image: url(../img/fondo_header_1.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
