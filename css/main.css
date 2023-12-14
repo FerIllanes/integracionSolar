@@ -11,7 +11,7 @@
     flex-direction: column;
     background-image: url(../img/fondo_header.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     height: 100vh;
 }
@@ -300,7 +300,7 @@
 
 /* ------------ MEDIA QRY ------------ */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     .contenedor {
         width: 80%;
         margin: auto;
@@ -316,22 +316,15 @@
         align-items: center;
         flex-wrap: wrap;
         width: 100%;
-        padding: 4rem 10rem;
-        margin-top: 1rem;
+        padding: 2rem 10rem;
     }
 
     .menu-btn {
         cursor: pointer;
     }
 
-    .bar {
-        width: 30px;
-        border: 3px solid #fff;
-        margin: 6px 0;
-    }
-
     .logo {
-        width: 350px;
+        width: 200px;
     }
 
     .menu {
@@ -339,8 +332,8 @@
         visibility: visible;
         display: flex;
         justify-content: right;
-        gap: 4rem;
-        font-size: 1.3rem;
+        gap: 3rem;
+        font-size: 1rem;
         flex-grow: 2;
         width: auto;
         margin-top: 1rem;
@@ -360,21 +353,22 @@
         margin-top: auto;
         margin-left: 10rem;
         margin-right: 2rem;
-        margin-bottom: 10rem;
+        margin-bottom: 2rem;
     }
 
     .intro h1 {
         color: #fff;
         font-weight: 700;
-        font-size: 4.5rem;
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
     }
 
     .intro p {
         color: #fff;
         font-weight: 400;
-        font-size: 2.7rem;
-        width: 60%;
-        margin-bottom: 0;
+        font-size: 1.5rem;
+        width: 55%;
+        margin-bottom: 2rem;
     }
 
     .contenedorServicios {
@@ -383,23 +377,22 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr;
         grid-template-areas: "tituloUno tituloUno" "leftServicios rightServicios";
-        height: 100vh;
         width: 80%;
         margin: auto;
         background-color: #FFFFFF;
         border-radius: 2rem;
-        margin-top: -60px;
+        margin-top: -25px;
         z-index: 2;
     }
 
     .tituloUno {
         grid-area: tituloUno;
         text-align: center;
-        margin: 3rem 0;
+        margin: 3rem 0 1rem 0;
     }
 
     .tituloUno h2 {
-        font-size: 4.5rem;
+        font-size: 3rem;
         color: #737480;
         font-weight: 900;
     }
@@ -440,8 +433,8 @@
     .circle {
         display: grid;
         place-content: center;
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         overflow: hidden;
         background-color: #FFB500;
@@ -451,14 +444,14 @@
     }
 
     .circle img {
-        height: 50px;
-        width: 50px;
+        height: 30px;
+        width: 30px;
         object-fit: contain;
     }
 
     .cardTexto {
         flex: 1;
-        font-size: 1.3rem;
+        font-size: 0.8rem;
     }
 
     .contenedorProposito {
@@ -466,27 +459,27 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 70vh;
+        height: 80vh;
         align-items: center;
         background-image: url(../img/fondo_proposito.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         padding: 0 2rem 4rem 2rem;
-        margin-top: -70px;
-        margin-bottom: 20rem;
+        margin-top: -40px;
+        margin-bottom: 12rem;
         z-index: 1;
     }
 
     .tituloDos {
         text-align: center;
-        margin-top: 20rem;
+        margin-top: 18rem;
         margin-bottom: 2rem;
         width: 55%;
     }
 
     .tituloDos h2 {
-        font-size: 4rem;
+        font-size: 3rem;
         color: #FFFFFF;
         font-weight: 900;
         margin-bottom: 2rem;
@@ -494,7 +487,7 @@
 
     .tituloDos p {
         color: #FFFFFF;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         margin-bottom: 2rem;
         font-weight: 300;
     }
@@ -508,25 +501,27 @@
     }
 
     .cardProposito {
-        justify-content: space-evenly;
-        height: 400px;
-        width: 405px;
+        justify-content: start;
+        height: 250px;
+        width: 255px;
         border: 3px solid #FFB500;
     }
 
     .cardProposito img {
-        height: 100px;
+        height: 60px;
         width: auto;
+        margin-bottom: 2rem;
     }
 
     .cardProposito p {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+        font-size: 0.8rem;
+        text-wrap: balance;
+        line-height: 1rem;
     }
 
     .cardProposito h3 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
     }
 
     .tituloTres {
@@ -534,28 +529,19 @@
     }
 
     .tituloTres h2 {
-        font-size: 4.5rem;
-        margin-bottom: 5rem;
-    }
-
-    .cardSolar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        font-size: 3rem;
+        margin-bottom: 2rem;
     }
 
     .contenedorSolar{
-        gap: 2rem;
+        gap: 1rem;
         margin-bottom: 7rem;
     }
 
     .contenedorImg {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 150px;
-        width: 100%;
+        height: 100px;
+        width: 90%;
         border: 1px solid #8C8C8C;
         border-radius: 1rem;
         overflow: hidden;
@@ -569,18 +555,20 @@
 
 
     .cardSolar p {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         color: #424242;
         padding: 0.5rem;
+        width: 90%;
+
     }
 
     .contenedorFooter h2 {
-        font-size: 5rem;
+        font-size: 3rem;
         font-weight: 900;
         color: #FFB500;
     }
 
     .contenedorFooter h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
